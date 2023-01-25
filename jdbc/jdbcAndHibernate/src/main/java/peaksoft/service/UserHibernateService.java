@@ -1,0 +1,19 @@
+package peaksoft.service;
+
+import peaksoft.model.User;
+
+import java.util.List;
+
+public interface UserHibernateService {
+    void createUsersTable();
+
+    void dropUsersTable();
+
+    void saveUser(String name, String lastName, byte age);
+
+    void removeUserById(long id);
+
+    List<User> getAllUsers();
+
+    void cleanUsersTable();
+}
